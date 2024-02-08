@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ad9f2d4f15.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+
+        .cardview {
+            position: relative;
+            max-width: 370px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .cardview::before {
+            position: absolute;
+            content: "";
+            background-color: #4070f4;
+            width: 100%;
+            height: 37%;
+            top: 0;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+
+        .image {
+            position: relative;
+            background-color: #4070f4;
+            border-radius: 50%;
+            padding: 3px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .my-profile {
+            border-radius: 50%;
+            border: 3px solid white;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            background-color:#949494;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+
+        .job {
+            margin-top: 5px;
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .social-media li {
+            margin: 0 15px;
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .social-media .instagram{
+            background-color: #cd486b;
+        }
+        .social-media .twitter{
+            background-color: #1DA1F2;
+        }
+        .social-media .facebook{
+            background-color: #316FF6;
+        }
+        .social-media .youtube{
+            background-color: #FF0000;
+        }
+
+        .buttons {
+            display: flex;
+            margin-top: 20px;
+            gap: 30px;
+        }
+
+        .Subscribe {
+            background-color:#4070f4;
+            color: white;
+            border: none;
+            height: 32px;
+            width: 100px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            background-color: #4070f4;
+            color: white;
+            border: none;
+            height: 32px;
+            width: 100px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+        }
+
+        .reply {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+
+        }
+
+        .reply li {
+            padding: 0 20px;
+            border-right: 2px solid;
+        }
+
+        .reply .share {
+            border-right: none;
+        }
+        .my-profile,.social-media li,.Subscribe,.message:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cardview">
+        <div class="image">
+            <img class="my-profile" src="cartoon.jpg" alt="">
+        </div>
+        <div class="name">Himanshu</div>
+        <div class="job">Web Developer & Youtuber</div>
+        <div class="social-media">
+            <li class="facebook"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
+            <li class="instagram"><i class="fa-brands fa-instagram"></i></li>
+            <li class="youtube"><i class="fa-brands fa-youtube"></i></li>
+        </div>
+        <div class="buttons">
+            <button class="Subscribe">Subscribe</button>
+            <button class="message">Message</button>
+        </div>
+        <div class="reply">
+            <li><i class="fa-regular fa-heart"></i>
+                <span class="number">60k</span>
+            </li>
+            <li><i class="fa-regular fa-comment"></i>
+                <span class="number">46k</span>
+            </li>
+            <li class="share">
+                <i class="fa-solid fa-share"></i>
+                <span class="number">165k</span>
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>
